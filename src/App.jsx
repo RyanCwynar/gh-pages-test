@@ -10,7 +10,7 @@ function App() {
           <div className="contact-info">
             <a href="mailto:john.doe@example.com">john.doe@example.com</a>
             <span className="separator">|</span>
-            <a href="tel:+1234567890">+1 (234) 567-890</a>
+            <a href="tel:+1234567890">+1 234 567 890</a>
             <span className="separator">|</span>
             <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">GitHub</a>
             <span className="separator">|</span>
