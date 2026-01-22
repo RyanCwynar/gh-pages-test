@@ -1,0 +1,256 @@
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.header-content h2 {
+  margin: 0.5rem 0 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.contact-info a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 0.5rem;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #667eea;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.section-content {
+  line-height: 1.8;
+  color: #ccc;
+  font-size: 1.05rem;
+}
+
+.experience-item,
+.education-item,
+.project-item {
+  margin-bottom: 2rem;
+}
+
+.experience-header,
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-header h4,
+.education-header h4,
+.project-item h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+.company,
+.institution {
+  margin: 0;
+  color: #999;
+  font-size: 1rem;
+}
+
+.date {
+  color: #888;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.experience-details {
+  margin: 0.75rem 0 0 1.5rem;
+  padding: 0;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.experience-details li {
+  margin-bottom: 0.5rem;
+}
+
+.education-details {
+  color: #ccc;
+  margin: 0.5rem 0 0 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category h4 {
+  margin: 0 0 1rem 0;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: rgba(102, 126, 234, 0.2);
+  color: #a5b4fc;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  transition: all 0.3s;
+}
+
+.skill-tag:hover {
+  background: rgba(102, 126, 234, 0.3);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
+}
+
+.project-item {
+  margin-bottom: 2rem;
+}
+
+.project-item p {
+  color: #ccc;
+  line-height: 1.8;
+  margin: 0.75rem 0;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1rem;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .header-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .main-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .experience-header,
+  .education-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
